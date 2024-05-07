@@ -15,5 +15,9 @@ class CostsHandler(MongoDB):
             "payment_method": cost["payment_method"],
             "responsible person": cost["responsible person"],
             "date": cost["date"],
-            "notes": cost["notes"]
+            "cost_id": cost["cost_id"],
+            "car_id": cost["car_id"],
+            "photo_id": cost["photo_id"],
+            "mileage_id": cost["mileage_id"]
+
         }

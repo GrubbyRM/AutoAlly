@@ -9,8 +9,16 @@ class FuelHandler(MongoDB):
 
     def add_fuel_to_db(self, fuel):
         query = {
-            "type": car["type"],
-            "kind": car["kind"]
+            "type": fuel["type"],
+            "ammount": fuel["ammount"],
+            "price": fuel["price"],
+            "price_per_liter": fuel["price_per_liter"],
+            "petrol_station": fuel["petrol_station"],
+            "location": fuel["location"],
+            "mileage_id": fuel["mileage_id"],
+            "date": fuel["date"],
+            "car_id": fuel["car_id"]
+
         }
         self.collection.insert_one(query)
         print("Added to DB " + str(query))
