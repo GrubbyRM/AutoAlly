@@ -1,6 +1,6 @@
 from databases_tools.mongodb_handler import MongoDB
 
-class CarsHandler(MongoDB):
+class UsersHandler(MongoDB):
     
     def __init__(self):
         super().__init__()
